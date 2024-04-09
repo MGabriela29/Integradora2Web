@@ -365,8 +365,8 @@ body{
 
   
 	.imalog{
-        width: 94px; 
-       height: 114px;
+        width: 144px; 
+       height: 174px;
 	  margin: 40px;
 	  animation: bounce 3s infinite ;
       position: static;
@@ -376,9 +376,10 @@ body{
         font-family: arial;
         font-size: 18px;
         background:transparent;
-        width: 80%;
-        overflow-y:  scroll;
-        padding-top: 0px;                            
+        overflow-y: scroll;
+        max-height: 600px;
+        flex: 1 1 auto;
+                                    
          }
 
 
