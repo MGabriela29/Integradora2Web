@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-custom navbar-mainbg">
             <a class="navbar-brand navbar-logo" href="index.html">
                 <h3><img src="/istatic/img/LogoGota.png" alt=""
-                        style="background-color:rgb(255, 255, 255); border-radius: 100px;width:50px;height: 50px;">
+                        style="background-color:rgb(255, 255, 255); border-radius: 100px;width:40px;height: 40px;">
                     SMICCAT</h3>
             </a>
             <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,10 +44,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contac"><i class="fas fa-envelope"></i> Contacto</a>
                     </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendar</a>
+                    < <li class="nav-item">
+                    
                 </li>
-                <li class="nav-item">
+                <!--li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Charts</a>
                 </li>
                 <li class="nav-item">
@@ -141,6 +141,24 @@
                             del recurso hídrico</p>
                     </div>
 
+
+                    
+                </section>
+                <section class="articulospt" >
+
+                    <div class="ptr" >
+                    <p class="pr" >El sensor de movimiento que ayudara a calcular el volumen
+                     (Cantidad) por medio de la altura que se encuentre el agua en el contendor 
+                    </p>
+                        <img src="/istatic/img/p2.gif" width="350" height="370" alt="" class="" />
+                        <p class="pt">El sensor de turbidez sirve para calcular 
+                        la cantidad de partículas ajenas a las de agua  
+                        para poder calcular la Calidad del agua que se encuentre en el contenedor 
+                             </p>
+                    </div>
+
+
+                    
                 </section>
             </article>
 
@@ -153,135 +171,11 @@
 
                         <div>
 
-
+                            <script src="firebase-connection.js" type="module"></script>
                             <ul id="comments-list" class="comments-list">
-                                <!-- <script>
-                            // Configura la conexión a Firebase con tu configuración
-                            const firebaseConfig = {
-                            apiKey: "AIzaSyDflVrzbmpcWrOyOotE1ltX6RQ5hil9MaA",
-                           authDomain: "pruebacoments.firebaseapp.com",
-                           databaseURL: "https://pruebacoments-default-rtdb.firebaseio.com",
-                           projectId: "pruebacoments",
-                           storageBucket: "pruebacoments.appspot.com",
-                           messagingSenderId: "78431417841",
-                           appId: "1:78431417841:web:72e6c954389b7d5e5c0050"
-                            };
 
-                        
-                            // Inicializa Firebase
-                            firebase.initializeApp(firebaseConfig);
-                        
-                            // Obtén una referencia a la base de datos
-                            const db = firebase.database();
-                            const comentariosRef = db.ref('comentarios');
-                        
-                            // Escucha los cambios en los comentarios y actualiza la lista dinámicamente
-                            comentariosRef.on('child_added', (snapshot) => {
-                              const comentario = snapshot.val();
-                              // Agrega el comentario a la lista de comentarios en tu HTML
-                              const comentariosList = document.getElementById('comments-list');
-                              const nuevoComentario = document.createElement('li');
-                              nuevoComentario.innerHTML = `
-                                <div>
-                                    <div class="comment-avatar"><img src="/istatic/img/avatar.jpg" alt="Foto perfil"></div>
-                                  <div class="comment-box">
-                                    <div class="comment-head">
-                                      <h6 class="comment-name">${comentarios.usuario}</h6>
-                                      <span>${comentarios.Fecha}</span>
-                                      <i class="fa fa-reply"></i>
-                                      <i class="fa fa-heart"></i>
-                                    </div>
-                                    <div class="comment-content">
-                                      ${comentarios.comentario}
-                                    </div>
-                                  </div>
-                                </div>
-                              `;
-                              comentariosList.appendChild(nuevoComentario);
-                            });
-                          </script> -->
-                                <li>
-                                    <div>
-                                        <!-- Avatar -->
-                                        <div class="comment-avatar"><img src="/istatic/img/FB_IMG_1710821016596.jpg"
-                                                alt="Foto perfil"></div>
-                                        <!-- Contenedor del Comentario -->
-                                        <div class="comment-box">
-                                            <div class="comment-head">
-                                                <h6 class="comment-name">Enrique Sanchez </h6>
-                                                <span>hace 20 minutos</span>
-                                                <i class="fa fa-reply"></i>
-                                                <i class="fa fa-heart"></i>
-                                            </div>
-                                            <div class="comment-content">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
-                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
-                                                illo?
-                                            </div>
-                                        </div>
-                                    </div> <br>
-                                </li>
-
-                                <li>
-                                    <div class="comment-main-level">
-                                        <div class="comment-avatar"><img src="/istatic/img/agua.png" alt="Foto Perfil">
-                                        </div>
-                                        <div class="comment-box">
-                                            <div class="comment-head">
-                                                <h6 class="comment-name">Zuleyma pelcastre </h6>
-                                                <span>hace 10 minutos</span>
-                                                <i class="fa fa-reply"></i>
-                                                <i class="fa fa-heart"></i>
-                                            </div>
-                                            <div class="comment-content">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
-                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
-                                                illo?
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <!-- Avatar -->
-                                        <div class="comment-avatar"><img src="/istatic/img/avatar.jpg"
-                                                alt="Foto perfil"></div>
-                                        <!-- Contenedor del Comentario -->
-                                        <div class="comment-box">
-                                            <div class="comment-head">
-                                                <h6 class="comment-name">Eduardo Sanchez </h6>
-                                                <span>hace 20 minutos</span>
-                                                <i class="fa fa-reply"></i>
-                                                <i class="fa fa-heart"></i>
-                                            </div>
-                                            <div class="comment-content">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
-                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
-                                                illo?
-                                            </div>
-                                        </div>
-                                    </div> <br>
-                                </li>
-                                <li>
-                                    <div class="comment-main-level">
-                                        <div class="comment-avatar"><img src="/istatic/img/agua.png" alt="Foto Perfil">
-                                        </div>
-                                        <div class="comment-box">
-                                            <div class="comment-head">
-                                                <h6 class="comment-name">Zuleyma pelcastre </h6>
-                                                <span>hace 10 minutos</span>
-                                                <i class="fa fa-reply"></i>
-                                                <i class="fa fa-heart"></i>
-                                            </div>
-                                            <div class="comment-content">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
-                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
-                                                illo?
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                </ul>
+                            
                         </div>
                     </nav>
                 </section>
@@ -293,6 +187,7 @@
 
     <hr>
     <section class="articulos">
+        <section style="align-items: center; align-content: center;align-self: center; text-align: center;">
         <div style="align-items: center;align-content: center;">
             <h1 class="tada" style="color: #000c52;"> Descarga WaterCare <img src="/istatic/img/LogoGota.png" alt=""
                     style="width:80px;height: 80px;"></h1>
@@ -335,6 +230,7 @@
                 });
             </script>
         </div>
+    </section>
     </section>
 
 
@@ -436,64 +332,13 @@
         </div>
     </footer>
 
-
-    <!-- <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'>
-</script><script  src="./script.js"></script> -->
-
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
-    <script src="firebase-connection.js" type="module"></script>
-    <!-- <script>
-        // Firebase configuration object
-        const firebaseConfig = {
-            apiKey: "AIzaSyDflVrzbmpcWrOyOotE1ltX6RQ5hil9MaA",
-            authDomain: "pruebacoments.firebaseapp.com",
-            databaseURL: "https://pruebacoments-default-rtdb.firebaseio.com",
-            projectId: "pruebacoments",
-            storageBucket: "pruebacoments.appspot.com",
-            messagingSenderId: "78431417841",
-            appId: "1:78431417841:web:72e6c954389b7d5e5c0050"
-        };
-
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        // Your Firebase database reference
-        const db = firebase.database();
-        const comentariosRef = db.ref('comentarios');
-
-        // Add Firebase event listeners and update comments dynamically
-        comentariosRef.on('child_added', (snapshot) => {
-            const comentario = snapshot.val();
-            const comentariosList = document.getElementById('comments-list');
-            const nuevoComentario = document.createElement('li');
-            nuevoComentario.innerHTML = `
-        <div>
-          <div class="comment-avatar"><img src="/istatic/img/avatar.jpg" alt="Foto perfil"></div>
-          <div class="comment-box">
-            <div class="comment-head">
-              <h6 class="comment-name">${comentario.usuario}</h6>
-              <span>${comentario.Fecha}</span>
-              <i class="fa fa-reply"></i>
-              <i class="fa fa-heart"></i>
-            </div>
-            <div class="comment-content">
-              ${comentario.comentario}
-            </div>
-          </div>
-        </div>
-      `;
-            comentariosList.appendChild(nuevoComentario);
-        });
-    </script> -->
-
-
+    
+    
 </body>
 
 </html>

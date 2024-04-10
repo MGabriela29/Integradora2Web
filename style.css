@@ -107,10 +107,11 @@ img{
 }
 .navbar-mainbg{
     width: 98%;
+    height: 10%;
     position: fixed;
 	background-color: #100261;
 	padding: 0px;
-	border-bottom:7px solid#7e829c;
+	/* border-bottom:7px solid#7e829c; */
 	border-radius: 5px;
 	box-shadow: #000;
     z-index: 1000;
@@ -125,7 +126,7 @@ img{
     list-style-type: none;
 }
 #navbarSupportedContent ul li a {
-	margin-right: 10px;
+	margin-right: 0px;
     list-style-type: none;
 }
 #navbarSupportedContent li {
@@ -138,25 +139,26 @@ img{
     text-decoration: none;
     font-size: 15px;
     display: block;
-    padding: 20px 20px;
+    padding: 20px 10px;
     transition-duration:0.6s;
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     position: relative;
 }
 #navbarSupportedContent>ul>li.active>a{
-	color: #1a00ad;
+	color: #2507d3;
 	background-color: transparent;
+    font-weight: bold;
 	transition: all 0.7s;
 }
 #navbarSupportedContent a:not(:only-child):after {
 	content: "\f105";
 	position: absolute;
-	right: 20px;
+	right: 10px;
 	top: 10px;
 	font-size: 14px;
 	font-family: "Font Awesome 5 Free";
 	display: inline-block;
-	padding-right: 3px;
+	padding-right: 0px;
 	vertical-align: middle;
 	font-weight: 900;
 	transition: 0.5s;
@@ -181,7 +183,7 @@ img{
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	background-color: #fff;
+	background-color: #ffffff;
 	bottom: 10px;
 }
 .hori-selector .right{
@@ -210,6 +212,22 @@ img{
 
 /*Pantalla grande*/ 
 @media(min-width: 992px){
+    .ptr{
+        display: flex; flex-direction: row; align-items: center;
+    }
+    .articulospt{
+        display: block;
+    border-radius:15px;
+    padding: 30px 30px 50px; 
+    margin: 40px;
+        width: 150%; padding-top: 0%;
+    }
+    .pr{
+        text-align: justify; padding-right: 30px;
+    }
+    .pt{
+        text-align: justify; padding-left: 30px;
+    }
     .navbar-mainbg{
         margin-left: 20px;}
 	.navbar-expand-custom {
@@ -314,6 +332,18 @@ article{
 
 /* pantalla chica aqui  */
 @media (max-width: 991px){
+    .ptr{
+        display: flex; 
+        flex-direction: column; align-items: center;
+    }
+    .articulospt{
+        display: flex;
+        flex-direction: column;
+    border-radius:15px;
+    padding: 30px 30px 30px; 
+    margin: 10px;
+        width: 100%; padding-top: 0%;
+    }
 body{ 
     width: 100%;
   }
