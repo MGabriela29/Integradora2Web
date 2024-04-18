@@ -212,6 +212,10 @@ img{
 
 /*Pantalla grande*/ 
 @media(min-width: 992px){
+
+    .descarga{
+        align-items: center; align-content: center;align-self: center; text-align: center;
+    }
     .ptr{
         display: flex; flex-direction: row; align-items: center;
     }
@@ -332,6 +336,10 @@ article{
 
 /* pantalla chica aqui  */
 @media (max-width: 991px){
+    .descarga{
+        align-items: center; align-content: center;align-self: center; text-align: center;
+        width: 80%;
+    }
     .ptr{
         display: flex; 
         flex-direction: column; align-items: center;
